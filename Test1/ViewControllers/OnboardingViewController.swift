@@ -9,14 +9,22 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
     
-
+    @IBOutlet weak var ImgView: UIImageView!
+    
     @IBOutlet weak var LoginBtn: UIButton!
     
     @IBOutlet weak var SignUpBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        //Circular Image
+        
+        ImgView?.layer.cornerRadius = (ImgView?.frame.size.width ?? 0.0) / 2
+        ImgView?.clipsToBounds = true
+        ImgView?.layer.borderWidth = 3.0
+        ImgView?.layer.borderColor = UIColor.white.cgColor
+        
     }
 
 

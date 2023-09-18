@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,79 +35,105 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myc-MY-KvF">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myc-MY-KvF" userLabel="UIView">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="News" translatesAutoresizingMaskIntoConstraints="NO" id="zWL-FB-pgx">
-                                        <rect key="frame" x="76" y="111" width="243" height="197"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="News" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zWL-FB-pgx">
+                                        <rect key="frame" x="76" y="111" width="243" height="243"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="243" id="D8F-Ic-1H6"/>
-                                            <constraint firstAttribute="height" constant="197" id="e3x-zx-ndH"/>
+                                            <constraint firstAttribute="height" constant="243" id="JOt-uo-8Kn"/>
+                                            <constraint firstAttribute="width" constant="243" id="uJP-uC-oD4"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="CircleRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bl6-cT-uW8">
-                                        <rect key="frame" x="49" y="343" width="296" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="aiY-pn-Lyp"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="LOGIN">
-                                            <fontDescription key="titleFontDescription" name="Symbol" family="Symbol" pointSize="14"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="efc-Au-C6d" kind="push" id="bsI-Xo-s4B"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDP-Is-Sg8">
                                         <rect key="frame" x="49" y="413" width="296" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="fY0-op-pwR"/>
+                                            <constraint firstAttribute="width" constant="296" id="1KI-mm-XJr"/>
+                                            <constraint firstAttribute="height" constant="40" id="cGD-8o-Vmn"/>
                                         </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="SIGN UP">
                                             <fontDescription key="titleFontDescription" name="Symbol" family="Symbol" pointSize="14"/>
                                         </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="I3u-kE-E5y" kind="push" id="CKZ-go-B9v"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bl6-cT-uW8">
+                                        <rect key="frame" x="49" y="477" width="296" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="296" id="1t4-OI-kEC"/>
+                                            <constraint firstAttribute="height" constant="40" id="qHT-aU-MZi"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="LOGIN">
+                                            <fontDescription key="titleFontDescription" name="Symbol" family="Symbol" pointSize="14"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="efc-Au-C6d" kind="push" id="bsI-Xo-s4B"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="Color"/>
                                 <constraints>
-                                    <constraint firstItem="Bl6-cT-uW8" firstAttribute="leading" secondItem="myc-MY-KvF" secondAttribute="leading" constant="49" id="13J-JD-u2P"/>
-                                    <constraint firstItem="Bl6-cT-uW8" firstAttribute="top" secondItem="zWL-FB-pgx" secondAttribute="bottom" constant="35" id="8wE-3g-mWK"/>
-                                    <constraint firstAttribute="trailing" secondItem="zWL-FB-pgx" secondAttribute="trailing" constant="74" id="CEE-sW-Q4F"/>
-                                    <constraint firstAttribute="width" constant="393" id="Grm-n2-WYj"/>
-                                    <constraint firstItem="zWL-FB-pgx" firstAttribute="top" secondItem="myc-MY-KvF" secondAttribute="top" constant="111" id="HCe-QC-iup"/>
-                                    <constraint firstAttribute="height" constant="852" id="LVw-KA-7nT"/>
-                                    <constraint firstItem="uDP-Is-Sg8" firstAttribute="leading" secondItem="myc-MY-KvF" secondAttribute="leading" constant="49" id="YEf-VE-tbk"/>
-                                    <constraint firstItem="uDP-Is-Sg8" firstAttribute="top" secondItem="Bl6-cT-uW8" secondAttribute="bottom" constant="30" id="ZzM-bN-3Ra"/>
-                                    <constraint firstAttribute="trailing" secondItem="uDP-Is-Sg8" secondAttribute="trailing" constant="48" id="diI-Lr-BlU"/>
-                                    <constraint firstItem="zWL-FB-pgx" firstAttribute="leading" secondItem="myc-MY-KvF" secondAttribute="leading" constant="76" id="fFm-Sa-uJH"/>
-                                    <constraint firstAttribute="trailing" secondItem="Bl6-cT-uW8" secondAttribute="trailing" constant="48" id="u8c-FX-0Lr"/>
+                                    <constraint firstItem="zWL-FB-pgx" firstAttribute="top" secondItem="myc-MY-KvF" secondAttribute="top" constant="111" id="61a-wU-k5r"/>
+                                    <constraint firstAttribute="trailing" secondItem="zWL-FB-pgx" secondAttribute="trailing" constant="74" id="AUC-b4-dCx"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bl6-cT-uW8" secondAttribute="bottom" constant="335" id="E7S-Go-9tq"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bl6-cT-uW8" secondAttribute="trailing" constant="48" id="LfA-6e-RqS"/>
+                                    <constraint firstItem="zWL-FB-pgx" firstAttribute="leading" secondItem="myc-MY-KvF" secondAttribute="leading" constant="76" id="MTN-L6-jxA"/>
+                                    <constraint firstItem="uDP-Is-Sg8" firstAttribute="leading" secondItem="myc-MY-KvF" secondAttribute="leading" constant="49" id="MjI-ow-lQf"/>
+                                    <constraint firstAttribute="trailing" secondItem="zWL-FB-pgx" secondAttribute="trailing" constant="75" id="R0j-D1-Soe"/>
+                                    <constraint firstItem="Bl6-cT-uW8" firstAttribute="leading" secondItem="myc-MY-KvF" secondAttribute="leading" constant="49" id="aRw-Aq-SES"/>
+                                    <constraint firstItem="zWL-FB-pgx" firstAttribute="leading" secondItem="myc-MY-KvF" secondAttribute="leading" constant="76" id="e15-dl-5Sq"/>
+                                    <constraint firstAttribute="height" constant="852" id="fKL-c6-bk8"/>
+                                    <constraint firstAttribute="width" constant="393" id="jYp-sb-xv3"/>
+                                    <constraint firstAttribute="trailing" secondItem="uDP-Is-Sg8" secondAttribute="trailing" constant="48" id="qZ8-pd-zRB"/>
+                                    <constraint firstItem="uDP-Is-Sg8" firstAttribute="top" secondItem="zWL-FB-pgx" secondAttribute="bottom" constant="59" id="rV0-2X-zdh"/>
+                                    <constraint firstItem="uDP-Is-Sg8" firstAttribute="top" secondItem="zWL-FB-pgx" secondAttribute="bottom" constant="59" id="vEb-I2-sYm"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="myc-MY-KvF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9Wt-ln-Cod"/>
-                            <constraint firstItem="myc-MY-KvF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KHE-en-JW8"/>
-                            <constraint firstAttribute="bottom" secondItem="myc-MY-KvF" secondAttribute="bottom" id="dzr-UJ-HYc"/>
-                            <constraint firstItem="myc-MY-KvF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xds-a9-sQu"/>
+                            <constraint firstItem="myc-MY-KvF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zsu-fG-EWz"/>
+                            <constraint firstItem="myc-MY-KvF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eca-J1-gvN"/>
+                            <constraint firstItem="myc-MY-KvF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iR1-Nm-exb"/>
+                            <constraint firstAttribute="bottom" secondItem="myc-MY-KvF" secondAttribute="bottom" id="vEg-uw-2dn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4S5-L5-GKO"/>
                     <connections>
+                        <outlet property="ImgView" destination="zWL-FB-pgx" id="QH3-lS-xD2"/>
                         <outlet property="LoginBtn" destination="Bl6-cT-uW8" id="v8u-QO-XlR"/>
                         <outlet property="SignUpBtn" destination="uDP-Is-Sg8" id="GCY-dA-EgG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="181" y="-37"/>
+            <point key="canvasLocation" x="66" y="-37"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="DsT-gi-vg0">
@@ -122,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bov-oN-98P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="960" y="338"/>
+            <point key="canvasLocation" x="960" y="289"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="XtJ-OF-SrM">
@@ -158,6 +185,9 @@
     </scenes>
     <resources>
         <image name="News" width="666.66668701171875" height="666.66668701171875"/>
+        <namedColor name="Color">
+            <color red="0.058823529411764705" green="0.062745098039215685" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
