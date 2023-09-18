@@ -7,8 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class OnboardingViewController: UIViewController {
+    
 
+    @IBOutlet weak var LoginBtn: UIButton!
+    
+    @IBOutlet weak var SignUpBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
