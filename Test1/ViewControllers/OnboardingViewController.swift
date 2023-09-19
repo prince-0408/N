@@ -13,9 +13,9 @@ class OnboardingViewController: UIViewController {
     
     @IBOutlet weak var NewsLable: UILabel!
     
-    @IBOutlet weak var LoginBtn: UIButton!
     
-   
+    @IBOutlet weak var ContinueBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

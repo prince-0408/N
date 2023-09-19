@@ -40,11 +40,14 @@ class LoginViewController: UIViewController {
                 //Login User
                 Auth.auth().signIn(withEmail: email, password: pass, completion: { ( user , error)in
                     
-                    if let u = user {
-                        self.performSegue(withIdentifier: "HomeVC", sender: self)
+                    if user == nil {
+                        let controller = self.storyboard?.instantiateViewController(identifier: "HomeVC")
+                                   controller!.modalPresentationStyle = .fullScreen
+                                   controller!.modalTransitionStyle = .flipHorizontal
+                        self.present(controller!, animated: true, completion: nil)
                     } else {
                         //error will show
-                        self.performSegue(withIdentifier: "Onboarding", sender: self)
+                        self.performSegue(withIdentifier: "OnboardingViewController", sender: self)
                     }
                 })
                 
