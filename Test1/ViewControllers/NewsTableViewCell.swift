@@ -32,13 +32,13 @@ class NewsTableViewCell: UITableViewCell {
     private let newsTitleLable: UILabel = {
         let lable = UILabel()
         lable.numberOfLines = 0
-        lable.font = .systemFont(ofSize: 22, weight: .semibold)
+        lable.font = .systemFont(ofSize: 16, weight: .semibold)
         return lable
     }()
     private let subtitleLable: UILabel = {
         let lable = UILabel()
         lable.numberOfLines = 0
-        lable.font = .systemFont(ofSize: 17, weight: .light)
+        lable.font = .systemFont(ofSize: 12, weight: .light)
         return lable
     }()
     private let newsImageView: UIImageView = {

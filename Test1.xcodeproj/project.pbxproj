@@ -13,11 +13,9 @@
 		A3670C1D2AB86D5F002142B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3670C1B2AB86D5F002142B6 /* Main.storyboard */; };
 		A3670C1F2AB86D64002142B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3670C1E2AB86D64002142B6 /* Assets.xcassets */; };
 		A3670C222AB86D64002142B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3670C202AB86D64002142B6 /* LaunchScreen.storyboard */; };
-		A385E6732AB97EE40019B470 /* AuthMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385E6722AB97EE40019B470 /* AuthMan.swift */; };
-		A385E6752AB984640019B470 /* OtpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385E6742AB984640019B470 /* OtpViewController.swift */; };
 		A385E6792AB98A480019B470 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385E6782AB98A480019B470 /* APICaller.swift */; };
 		A385E67B2AB98AD00019B470 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385E67A2AB98AD00019B470 /* HomeViewController.swift */; };
-		A385E67D2AB98B650019B470 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385E67C2AB98B650019B470 /* NewsViewController.swift */; };
+		A385E67D2AB98B650019B470 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A385E67C2AB98B650019B470 /* NewsDetailViewController.swift */; };
 		A39927152AB9405F00447B68 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A39927142AB9405F00447B68 /* GoogleService-Info.plist */; };
 		A3A729B32AB8A52A00E7E90A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A729B22AB8A52A00E7E90A /* LoginViewController.swift */; };
 		A3A729B52AB8A5F700E7E90A /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A729B42AB8A5F700E7E90A /* NewsTableViewCell.swift */; };
@@ -35,11 +33,9 @@
 		A3670C1E2AB86D64002142B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3670C212AB86D64002142B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3670C232AB86D64002142B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A385E6722AB97EE40019B470 /* AuthMan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMan.swift; sourceTree = "<group>"; };
-		A385E6742AB984640019B470 /* OtpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpViewController.swift; sourceTree = "<group>"; };
 		A385E6782AB98A480019B470 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		A385E67A2AB98AD00019B470 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		A385E67C2AB98B650019B470 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		A385E67C2AB98B650019B470 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		A39927142AB9405F00447B68 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3A729B22AB8A52A00E7E90A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A3A729B42AB8A5F700E7E90A /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -116,10 +112,9 @@
 			children = (
 				A3670C192AB86D5F002142B6 /* OnboardingViewController.swift */,
 				A3A729B22AB8A52A00E7E90A /* LoginViewController.swift */,
-				A385E6742AB984640019B470 /* OtpViewController.swift */,
 				A3A729B42AB8A5F700E7E90A /* NewsTableViewCell.swift */,
 				A385E67A2AB98AD00019B470 /* HomeViewController.swift */,
-				A385E67C2AB98B650019B470 /* NewsViewController.swift */,
+				A385E67C2AB98B650019B470 /* NewsDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -128,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				A3A729B62AB8A8A500E7E90A /* UIView+Extension.swift */,
-				A385E6722AB97EE40019B470 /* AuthMan.swift */,
 				A385E6782AB98A480019B470 /* APICaller.swift */,
 			);
 			path = Extension;
@@ -252,14 +246,12 @@
 			files = (
 				A3670C1A2AB86D5F002142B6 /* OnboardingViewController.swift in Sources */,
 				A3A729B72AB8A8A500E7E90A /* UIView+Extension.swift in Sources */,
-				A385E6752AB984640019B470 /* OtpViewController.swift in Sources */,
 				A3670C162AB86D5F002142B6 /* AppDelegate.swift in Sources */,
-				A385E67D2AB98B650019B470 /* NewsViewController.swift in Sources */,
+				A385E67D2AB98B650019B470 /* NewsDetailViewController.swift in Sources */,
 				A385E6792AB98A480019B470 /* APICaller.swift in Sources */,
 				A385E67B2AB98AD00019B470 /* HomeViewController.swift in Sources */,
 				A3A729B32AB8A52A00E7E90A /* LoginViewController.swift in Sources */,
 				A3670C182AB86D5F002142B6 /* SceneDelegate.swift in Sources */,
-				A385E6732AB97EE40019B470 /* AuthMan.swift in Sources */,
 				A3A729B52AB8A5F700E7E90A /* NewsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

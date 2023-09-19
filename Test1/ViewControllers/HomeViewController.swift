@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     private let tableView: UITableView = {
         let table = UITableView()
@@ -77,10 +77,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated: true)
         let article = articles[indexPath.row]
         
-        guard let url = URL(string: article.url ?? "") else {
+        guard URL(string: article.url ?? "") != nil else {
             return
         }
-        let vc = NewsViewController()
+        let vc = NewsDetailViewController()
         present(vc, animated: true)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
