@@ -112,8 +112,8 @@
 			children = (
 				A3670C192AB86D5F002142B6 /* OnboardingViewController.swift */,
 				A3A729B22AB8A52A00E7E90A /* LoginViewController.swift */,
-				A3A729B42AB8A5F700E7E90A /* NewsTableViewCell.swift */,
 				A385E67A2AB98AD00019B470 /* HomeViewController.swift */,
+				A3A729B42AB8A5F700E7E90A /* NewsTableViewCell.swift */,
 				A385E67C2AB98B650019B470 /* NewsDetailViewController.swift */,
 			);
 			path = ViewControllers;

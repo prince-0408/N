@@ -110,7 +110,6 @@
                     <navigationItem key="navigationItem" id="4S5-L5-GKO"/>
                     <connections>
                         <outlet property="ImgView" destination="zWL-FB-pgx" id="QH3-lS-xD2"/>
-                        <outlet property="LoginBtn" destination="eRR-Jl-VcO" id="d5w-5h-qxr"/>
                         <outlet property="NewsLable" destination="QXl-Ox-F21" id="2Vs-LT-BuC"/>
                     </connections>
                 </viewController>
@@ -141,7 +140,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLm-qr-VEf" userLabel="Login Btn">
-                                <rect key="frame" x="32" y="538" width="328" height="40"/>
+                                <rect key="frame" x="32" y="529" width="328" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Tzd-Tw-P77"/>
@@ -162,8 +161,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="News" translatesAutoresizingMaskIntoConstraints="NO" id="I4v-Dr-b5K">
                                 <rect key="frame" x="76" y="153" width="240" height="240"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="2dM-Ax-uuw"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="240" id="Pcy-gt-lCa"/>
                                     <constraint firstAttribute="width" constant="240" id="Uaz-cW-96d"/>
                                     <constraint firstAttribute="height" constant="240" id="aPl-wK-dC0"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="tgb-kU-TTG"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EQT-zt-Pyj">
