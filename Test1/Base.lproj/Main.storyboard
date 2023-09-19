@@ -38,12 +38,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myc-MY-KvF" userLabel="UIView">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="News" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zWL-FB-pgx">
-                                        <rect key="frame" x="76" y="111" width="243" height="243"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="243" id="JOt-uo-8Kn"/>
-                                            <constraint firstAttribute="width" constant="243" id="uJP-uC-oD4"/>
-                                        </constraints>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="News" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zWL-FB-pgx">
+                                        <rect key="frame" x="75" y="111" width="243" height="243"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="CircleRadius">
                                                 <real key="value" value="10"/>
@@ -53,34 +50,10 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDP-Is-Sg8">
-                                        <rect key="frame" x="49" y="413" width="296" height="40"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bl6-cT-uW8">
+                                        <rect key="frame" x="48" y="495" width="296" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="296" id="1KI-mm-XJr"/>
-                                            <constraint firstAttribute="height" constant="40" id="cGD-8o-Vmn"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="SIGN UP">
-                                            <fontDescription key="titleFontDescription" name="Symbol" family="Symbol" pointSize="14"/>
-                                        </buttonConfiguration>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="I3u-kE-E5y" kind="push" id="CKZ-go-B9v"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bl6-cT-uW8">
-                                        <rect key="frame" x="49" y="477" width="296" height="40"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="296" id="1t4-OI-kEC"/>
-                                            <constraint firstAttribute="height" constant="40" id="qHT-aU-MZi"/>
-                                        </constraints>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="LOGIN">
@@ -88,30 +61,24 @@
                                         </buttonConfiguration>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="8"/>
+                                                <real key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="efc-Au-C6d" kind="push" id="bsI-Xo-s4B"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="News App Using NewsApi" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXl-Ox-F21">
+                                        <rect key="frame" x="91" y="385" width="210" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" name="Color"/>
                                 <constraints>
-                                    <constraint firstItem="zWL-FB-pgx" firstAttribute="top" secondItem="myc-MY-KvF" secondAttribute="top" constant="111" id="61a-wU-k5r"/>
-                                    <constraint firstAttribute="trailing" secondItem="zWL-FB-pgx" secondAttribute="trailing" constant="74" id="AUC-b4-dCx"/>
-                                    <constraint firstAttribute="bottom" secondItem="Bl6-cT-uW8" secondAttribute="bottom" constant="335" id="E7S-Go-9tq"/>
-                                    <constraint firstAttribute="trailing" secondItem="Bl6-cT-uW8" secondAttribute="trailing" constant="48" id="LfA-6e-RqS"/>
-                                    <constraint firstItem="zWL-FB-pgx" firstAttribute="leading" secondItem="myc-MY-KvF" secondAttribute="leading" constant="76" id="MTN-L6-jxA"/>
-                                    <constraint firstItem="uDP-Is-Sg8" firstAttribute="leading" secondItem="myc-MY-KvF" secondAttribute="leading" constant="49" id="MjI-ow-lQf"/>
-                                    <constraint firstAttribute="trailing" secondItem="zWL-FB-pgx" secondAttribute="trailing" constant="75" id="R0j-D1-Soe"/>
-                                    <constraint firstItem="Bl6-cT-uW8" firstAttribute="leading" secondItem="myc-MY-KvF" secondAttribute="leading" constant="49" id="aRw-Aq-SES"/>
-                                    <constraint firstItem="zWL-FB-pgx" firstAttribute="leading" secondItem="myc-MY-KvF" secondAttribute="leading" constant="76" id="e15-dl-5Sq"/>
                                     <constraint firstAttribute="height" constant="852" id="fKL-c6-bk8"/>
-                                    <constraint firstAttribute="width" constant="393" id="jYp-sb-xv3"/>
-                                    <constraint firstAttribute="trailing" secondItem="uDP-Is-Sg8" secondAttribute="trailing" constant="48" id="qZ8-pd-zRB"/>
-                                    <constraint firstItem="uDP-Is-Sg8" firstAttribute="top" secondItem="zWL-FB-pgx" secondAttribute="bottom" constant="59" id="rV0-2X-zdh"/>
-                                    <constraint firstItem="uDP-Is-Sg8" firstAttribute="top" secondItem="zWL-FB-pgx" secondAttribute="bottom" constant="59" id="vEb-I2-sYm"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -128,28 +95,11 @@
                     <connections>
                         <outlet property="ImgView" destination="zWL-FB-pgx" id="QH3-lS-xD2"/>
                         <outlet property="LoginBtn" destination="Bl6-cT-uW8" id="v8u-QO-XlR"/>
-                        <outlet property="SignUpBtn" destination="uDP-Is-Sg8" id="GCY-dA-EgG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66" y="-37"/>
-        </scene>
-        <!--Sign Up View Controller-->
-        <scene sceneID="DsT-gi-vg0">
-            <objects>
-                <viewController storyboardIdentifier="SignUp" id="I3u-kE-E5y" customClass="SignUpViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Rav-iJ-czp">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="AT3-Ur-xvn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="kv1-jT-DxU"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bov-oN-98P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="960" y="289"/>
+            <point key="canvasLocation" x="64.885496183206101" y="-37.323943661971832"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="XtJ-OF-SrM">
@@ -158,14 +108,102 @@
                     <view key="view" contentMode="scaleToFill" id="VS7-EC-HgT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+91 1234567891" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4tu-ya-jwh">
+                                <rect key="frame" x="33" y="423" width="328" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLm-qr-VEf" userLabel="Login Btn">
+                                <rect key="frame" x="33" y="497" width="328" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="Color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Enter OTP"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="aL7-oR-Vfv" kind="show" id="SQW-lj-BpG"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="News" translatesAutoresizingMaskIntoConstraints="NO" id="I4v-Dr-b5K">
+                                <rect key="frame" x="76" y="153" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pwG-ck-HtB"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Color"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IXi-cP-imn"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="IXi-cP-imn"/>
+                    <connections>
+                        <outlet property="LoginBtmn" destination="BLm-qr-VEf" id="7Gw-3P-1gT"/>
+                        <outlet property="emailTextField" destination="4tu-ya-jwh" id="zo1-Ze-Yvx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l87-Pu-K4M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961" y="-427"/>
+            <point key="canvasLocation" x="889" y="-37"/>
+        </scene>
+        <!--Otp View Controller-->
+        <scene sceneID="CHQ-Wm-fe1">
+            <objects>
+                <viewController id="aL7-oR-Vfv" customClass="OtpViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VcP-ll-bIe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="111111" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tkb-VF-1X1">
+                                <rect key="frame" x="32" y="427" width="328" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipf-iO-jkP" userLabel="Login Btn">
+                                <rect key="frame" x="32" y="501" width="328" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="Color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Enter OTP"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="News" translatesAutoresizingMaskIntoConstraints="NO" id="F7a-O6-TbW">
+                                <rect key="frame" x="75" y="157" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HxN-Bc-zRX"/>
+                        <color key="backgroundColor" name="Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bqT-uR-qhb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EjW-ZM-dGD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660" y="-37"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="8wJ-U8-N6f">
@@ -174,13 +212,35 @@
                     <view key="view" contentMode="scaleToFill" id="LQO-d6-nob">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VzH-2w-cZm">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SpM-qV-QxQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRu-Ap-3tH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734" y="-37"/>
+            <point key="canvasLocation" x="2552" y="-37"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="yso-u0-oE8">
+            <objects>
+                <viewController id="zWI-GS-fQJ" customClass="NewsViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UPp-c4-tgO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fws-db-6cS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLe-Up-zqs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3399" y="-37"/>
         </scene>
     </scenes>
     <resources>

@@ -12,9 +12,7 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var ImgView: UIImageView!
     
     @IBOutlet weak var LoginBtn: UIButton!
-    
-    @IBOutlet weak var SignUpBtn: UIButton!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
